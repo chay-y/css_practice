@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrap{
+            background-color: papayawhip;
+            position: relative
+        }
+        .box1{
+            width: 100px;
+            height: 100px;
+            background-color: palegoldenrod;
+            position: absolute;
+            top: 100px;
+            left: 120px;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: powderblue;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        /* 2개의 요소가 곂치는 경우
+            - 둘 중 하나만 position을 가진 경우 : position을 가진 요소가 위에 표시된다
+            - 둘 다 postion을 가진 경우 : 나중에 작성된 요소가 위에 표시된다 */
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: peachpuff;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+
+</body>
+</html>

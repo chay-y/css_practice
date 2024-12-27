@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 div{
+            background-color: khaki;
+        }
+        .box2 span{
+            background-color: aquamarine;
+        }
+        .box3 img{
+            background-color: brown;
+        }
+/*  display : block;
+    display : inline;
+    display : inline-black;
+    ->해당 값을 가진 태그의 성질을 변경할 때 사용
+    
+    display : flex;
+    -> 해당 값을 가진 태그의 자식 태그들을 가로 정렬 시킴
+    display : none; 
+    -> 해당 값을 가진 태그가 브라우저상에서 사라지도록 만들 때 사용*/        
+        .box4 span{
+            display: block;
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+        .box5 .b52{
+            margin-top: 200px;
+        }
+        .box5 img{
+            vertical-align: top;
+        }
+        .box6 .b6{
+            display: flex;
+        }
+        .box6 .b6 div{
+            width: 100px;
+            background-color: aqua;
+        }
+        .box6 .b6 .b61{
+            height: 100px;
+        }
+        .box6 .b6 .b62{
+            height: 70px;
+            margin-top: 50px;
+        }
+        .box6 .b6 .b63{
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h3>블럭 요소</h3>
+        <div>1-1</div>
+        <div>2-1</div>
+        <div>3-1</div>
+    </div>
+
+    <hr>
+
+    <span class="box2">
+        <h3>인라인 요소</h3>
+        <span>2-1</span>
+        <span>2-2</span>
+        <span>2-3</span>
+    </span>
+
+    <div class="box3">
+        <h3>인라인블럭 요소</h3>
+        <img src="./img/food1.png" alt="음식1">
+        <img src="./img/food2.png" alt="음식2">
+        <img src="./img/food3.png" alt="음식3">
+    </div>
+
+    <div class="box4">
+        <h3>인라인 요소인 span태그에 공간값 입력하기</h3>
+        <span>4-1</span>
+        <span>4-2</span>
+        <span>4-3</span>
+    </div>
+
+    <div class="box5">
+        <h3>높이값이 서로 다른 인라인블럭 요소</h3>
+        <img src="./img/actor1.jpg" alt="1">
+        <img src="./img/food1.png" alt="2" class="b52">
+        <img src="./img/drama.jpg" alt="3">
+    </div>
+
+    <div class="box6">
+        <h3>높이값이 서로 다른 블록요소를 가로 배열했을 때</h3>
+        <div class="b6">
+            <div class="b61">6-1</div>
+            <div class="b62">6-2</div>
+            <div class="b63">6-3</div>
+        </div>
+    </div>
+</body>
+</html>

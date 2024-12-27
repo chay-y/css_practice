@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 640px;
+            background-color: azure;
+        }
+        .box1-1{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            background-color: royalblue;
+        }
+        .box1-1 p{
+            width: 200px;
+            height: 100px;
+            background-color: blue;
+        }
+        .box1-2{
+            display: flex;
+            justify-content: space-between;
+            background-color: pink;
+        }
+        .box1-2 p{
+            width: 200px;
+            height: 260px;
+            background-color: hotpink;
+        }
+        .box1-2-1{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 400px;
+            background-color: lightcoral;
+        }
+        .box1-2-1 .box1-2-1-1{
+            /*margin-left: 200px;*/
+            background-color: aqua;
+            width: 200px;
+            height: 120px;
+        }
+        .box1-2-1 .box1-2-1-2{
+            background-color: violet;
+            width: 400px;
+            height: 120px;
+        }
+
+        .box2{
+            width: 720px;
+            display: flex;
+            justify-content: space-between;
+            background-color: yellow;
+        }
+
+        p{
+            margin: 0;
+        }
+        .box2-1{
+            width: 250px;
+            background-color: blanchedalmond;
+        }
+        .box2-1 p{
+            height: 100px;
+            background-color: aquamarine;
+            margin-bottom: 10px;
+        }
+        .box2-1 .box2-1-1{
+            width: 100px;
+            height: 50px;
+        }
+        .box2-1 .box2-1-4{
+            margin-bottom: 0px;
+        }
+/* 높이값을 지정하지 않고 flex를 하면
+ 자동으로 부모의 높이값만큼 확장됨 */
+        .box2-2{
+            width: 440px;
+            display: flex;
+            justify-content: space-between;
+            background-color: greenyellow;
+        }
+        .box2-2 p{
+            width: 140px;
+            background-color: powderblue;
+        }
+
+        .box3{
+            width: 1000px;
+            background-color: peru;
+            padding: 30px;
+        }
+        .box3 ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;  
+        }
+/* 이미지의 크기, 여백 등을 지정해야 할 때는
+    img태그에 지정하는 것이 아니라
+    이미지를 감싸고 있는 태그에 지정해야 함 */
+        .box3 ul li{
+            width: 230px;
+            height: 200px;
+            background-color: lightsteelblue;
+        }
+/* width와 height를 %로 지정하면
+    부모 크기에 비례하여 계산됨 */
+        .box3 ul img{
+            width: 100%;
+            height: 100%;
+        }
+
+        .box4{
+            width: 1000px;
+            background-color: green;
+            padding: 50px;
+        }
+        .box4 ul{
+            margin: 0px;
+            padding: 0px;
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+        .box4 ul li{
+            width: 320px;
+        }
+        .box4 ul img{
+            width: 100%;
+            height: 100%;
+        }
+        .box4 ul img:hover{
+            opacity: 50%;
+        }
+        .box4 ul p{
+            color: azure;
+            text-align: center;
+            font-family: 궁서체;
+            font-size: 16pt;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box1-1">
+            <p>가1</p>
+            <p>가2</p>
+            <p>가3</p>
+        </div>
+        <div class="box1-2">
+            <p>나1</p>
+            <div class="box1-2-1">
+                <p class="box1-2-1-1">나2</p>
+                <p class="box1-2-1-2">나3</p>
+            </div>
+        </div>
+    </div>
+    
+    <br><br><hr><br><br>
+
+    <div class="box2">
+        <div class="box2-1">
+            <p class="box2-1-1">가1</p>
+            <p>가2</p>
+            <p>가3</p>
+            <p class="box2-1-4">가4</p>
+        </div>
+        <div class="box2-2">
+            <p>나1</p>
+            <p>나2</p>
+            <p>나3</p>
+        </div>
+    </div>
+
+    <br><br><hr><br><br>
+
+    <div class="box3">
+        <ul>
+            <li><img src="./img/actor1.jpg" alt="배우1"></li>
+            <li><img src="./img/actor2.jpg" alt="배우2"></li>
+            <li><img src="./img/actor3.jpg" alt="배우3"></li>
+            <li><img src="./img/actor4.jpg" alt="배우4"></li>
+        </ul>
+    </div>
+
+    <br><br><hr><br><br>
+
+    <div class="box4">
+        <ul>
+            <li><img src="./img/book1.jpg" alt="책1"><p>베스트셀러1</p></li>
+            <li><img src="./img/book2.jpg" alt="책2"><p>베스트셀러2</p></li>
+            <li><img src="./img/book3.jpg" alt="책3"><p>베스트셀러3</p></li>
+        </ul>
+    </div>
+
+</body>
+</html>

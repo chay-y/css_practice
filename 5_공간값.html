@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            margin: 0;
+        }
+        .box1{
+            background-color: palevioletred;
+        }
+        .box1 .b1-1{
+            background-color: rosybrown;
+            width: 300px;
+            height: 50px;
+            border-bottom: 5px solid snow;
+        }
+        .box1 .b1-2{
+            width: 300px;
+            height: 80px;
+            border: 10px dotted mediumturquoise;
+            margin: 20px;
+            padding: 30px;
+            background-color: darkolivegreen;
+        }
+        .box1 .b1-3{
+            width: 300px;
+            height: 30;
+            border: 7px double pink;
+            background-color: wheat;
+        }
+
+            /*  .box2 안쪽여백 30, .box2의 너비값은? : 460
+            (.box2의 높이값은 필요없음) 
+            2-1 : w.400 h.100, 아래쪽여백 10
+            2-2 : w.300 h.100, 아래쪽여백10
+            2-3 : w.200 h.100*/
+
+        .box2{
+            background-color: beige;
+            padding: 30px;
+            width: 460px;
+            box-sizing: border-box;
+        }
+        .box2 .b2-1{
+            background-color: lightcoral;
+            width: 400px;
+            height: 100px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .box2 .b2-2{
+            background-color: lemonchiffon;
+            width: 300px;
+            height: 100px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        .box2 .b2-3{
+            background-color: lightsteelblue;
+            width: 200px;
+            height: 100px;
+            box-sizing: border-box;
+        }
+            /* box3 div {너비값560}
+                가 div {안쪽 여백은 ? 아래쪽 여백 30}
+                    p(3개) {w.500, h.50, 아래쪽 여백 10}
+                나 div {안쪽 여백은 ?}
+                    p(4개) {w.500, h.100, 아래쪽 여백 10} */
+        
+        .box3{
+            background-color: lightcyan;
+            width: 560px;
+        }
+
+        .ga{
+            background-color: lavenderblush;
+            width: 500px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .ga .ga1{
+            background-color: purple;
+            width: 500px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+    
+        .na{
+            background-color: lemonchiffon;
+            width: 500px;
+            padding: 30px;
+        }
+
+        .na .na1{
+            background-color: yellow;
+            width: 500px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+            /* box4 div {너비값은?}
+                가 div {w.500, 안쪽여백 30, 아래쪽여백 30}
+                p {w.300, h.100, 아래쪽여백 10}
+                p {h.100, 아래쪽 여백 10}
+                p {h.100}
+                
+                나 div {w.400, 안쪽여백 30, 왼쪽여백은?}
+                p {h.100, 아래쪽 여백10}
+                p {h.100}*/
+        
+        .box4{
+            background-color: silver;
+            width: 560px;
+        }
+        .gga{
+            background-color: red;
+            width: 500px;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .gga .ga1{
+            background-color: lightsalmon;
+            width: 300px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .gga .ga2{
+            background-color: lightsalmon;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .gga .ga3{
+            background-color: lightsalmon;
+            height: 100px;
+        }
+        .nna{
+            background-color: brown;
+            width: 400px;
+            padding: 30px;
+            margin-left: 100px;
+        }
+        .nna .na1{
+            background-color: burlywood;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .nna .na2{
+            background-color: burlywood;
+            height: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p class="b1-1">1-1</p>
+        <p class="b1-2">1-2</p>
+        <p class="b1-3">1-3</p>
+    </div>
+
+    <br><br><hr><br><br>
+
+    <div class="box2">
+        <p class="b2-1">2-1</p>
+        <p class="b2-2">2-2</p>
+        <p class="b2-3">2-3</p>
+    </div>
+
+    <br><br><hr><br><br>
+
+    <div class="box3">
+        <div class="ga">
+            <p class="ga1">가1</p>
+            <p class="ga1">가2</p>
+            <p class="ga1">가3</p>
+        </div>
+        <div class="na">
+            <p class="na1">나1</p>
+            <p class="na1">나2</p>
+            <p class="na1">나3</p>
+            <p class="na1">나4</p>
+        </div>
+    </div>
+
+    <div class="box4">
+        <div class="gga">
+            <p class="ga1">가1</p>
+            <p class="ga2">가2</p>
+            <p class="ga3">가3</p>
+        </div>
+        <div class="nna">
+            <p class="na1">나1</p>
+            <p class="na2">나2</p>
+        </div>
+    </div>
+
+</body>
+</html>

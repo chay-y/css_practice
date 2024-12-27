@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+/*  ul.orange :  ul안에 orange class를 가지고있는 자식만 모두 적용
+    ul .orange  : ul안에 orange class를 가지고있는 모든 것 적용
+    .orange+li : orange class와 인접한 이하 li에 적용
+    .orange~li : orange class에서부터 인접한 이하 li에 모두 적용*/
+
+        .orange~li{
+            color: plum;
+        }
+
+/* &nbsp:hover: &nbsp에 마우스 포인트가 올라가 있는 동안 적용 */
+        li:hover{
+            background-color: lightgreen;
+        }
+
+/* &nbsp:active : &nbsp에 마우스로 클릭하고 있는 동안 적용 */
+        span:active{
+            color: red;
+        }
+/* &nbsp:first-child : &nbsp가 형제 요소 중 첫번째 요소라면 적용 
+   &nbsp:nth-child(n) : &nbsp 형제의 (n)번째 요소에 적용 */
+        li:nth-child(3){
+            background-color: palegoldenrod;
+        }
+
+        div{
+            color: aliceblue;
+            text-align: center;
+            margin: 20px;
+            padding: 8px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+        }
+
+        .d1:hover{
+            text-shadow: 3px 3px 3px greenyellow;
+        }
+        .d2:hover{
+            text-shadow: 3px 3px 3px greenyellow;
+        }
+        .d3:hover{
+            text-shadow: 3px 3px 3px greenyellow;
+        }
+        .d1{
+            background-color: black;
+        }
+        .d2{
+            background-color: deeppink;
+        }
+        .d3{
+            background-color: gray;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>딸기</div>
+    <p>수박</p>
+    <ul>
+        <li>토마토</li>
+        <li class="orange">오렌지</li>
+        <li>망고</li>
+        <li>귤</li>
+        <li>
+            <p class="orange">천혜향</p>
+        </li>
+    </ul>
+    <span class="orange">포도</span>
+
+    <div>
+        <div class="d1">FIRST</div>
+        <div class="d2">SECOND</div>
+        <div class="d3">THIRD</div>
+    </div>
+</body>
+</html>

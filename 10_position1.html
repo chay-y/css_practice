@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        ul{list-style: none;}
+        .box1{
+            width: 500px;
+            background-color: lightsteelblue;
+            position: relative;
+        }
+        .box1 p{
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+        }
+        .box1 .b13{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+
+        .box2{
+            width: 500px;
+            background-color: yellowgreen;
+            position: relative;
+        }
+        .box2 p{
+            width: 100px;
+            height: 100px;
+            background-color: greenyellow;
+        }
+        .box2 .b22{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        .box2 .b24{
+            position: absolute;
+            top: 100px;
+            right: 100px;
+        }
+
+        .box3{
+            width: 500px;
+            height: 320px;
+            background-color: deeppink;
+            position: relative;
+        }
+        .box3 p{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+        }
+        .box3 .b32{
+            position: absolute;
+            top: 100px;
+            right: 0px;
+        }
+        .box3 .b33{
+            position: absolute;
+            top: 100px;
+            left: 100px;
+        }
+        .box3 .b34{
+            position: absolute;
+            top: 100px;
+            left: 0px;
+        }
+        .box3 .b35{
+            position: absolute;
+            top: 220px;
+            right: 0px;
+        }
+        .box3 .b36{
+            position: absolute;
+            top: 220px;
+            left: 0px;
+        }
+
+        /* .box4 {w.860}
+            div .ga{w.200 h.100 아래쪽여백 30}
+            div .na
+                ul
+                    li*6[w.70 h.30 사이간격 10]
+            div da
+                ul
+                    li*4[w.200 h.150] */
+        .box4{
+            width: 860px;
+            position: relative;
+            background-color: darkred;
+        }
+        .box4 .ga{
+            width: 200px;
+            height: 100px;
+            margin-bottom: 30px;
+            background-color: red;
+        }
+        .box4 .na{
+            position: absolute;
+            top: 70px;
+            right: 0px;
+        }
+        .box4 .na ul{
+            display: flex;
+            background-color: green;
+        }
+        .box4 .na ul li{
+            width: 70px;
+            height: 30px;
+            margin-left: 10px;
+            background-color: aqua;
+        }
+        .box4 .da ul{
+            width: 860px;
+            display: flex;
+            justify-content: space-between;
+            background-color: purple;
+        }
+        .box4 .da ul li{
+            width: 200px;
+            height: 150px;
+            background-color: plum;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <p>1-1</p>
+        <p>1-2</p>
+        <p class="b13">1-3</p>
+    </div>
+
+    <br><hr><br>
+    <div class="box2">
+        <p>2-1</p>
+        <p class="b22">2-2</p>
+        <p>2-3</p>
+        <p class="b24">2-4</p>
+        <p>2-5</p>
+    </div>
+    <br><hr><br> 
+    <div class="box3">
+        <p class="b31">3-1</p>
+        <p class="b32">3-2</p>
+        <p class="b33">3-3</p>
+        <p class="b34">3-4</p>
+        <p class="b35">3-5</p>
+        <p class="b36">3-6</p>
+    </div>
+    <br><hr><br>
+    <div class="box4">
+        <div class="ga">가</div>
+        <div class="na">
+            <ul>
+                <li>나1</li>
+                <li>나2</li>
+                <li>나3</li>
+                <li>나4</li>
+                <li>나5</li>
+                <li>나6</li>
+            </ul>
+        </div>
+        <div class="da">
+            <ul>
+                <li>다1</li>
+                <li>다2</li>
+                <li>다3</li>
+                <li>다4</li>
+            </ul>
+        </div>
+    </div>
+    
+
+</body>
+</html>

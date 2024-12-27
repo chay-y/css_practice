@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            margin: 0;
+        }
+
+        .box1{
+            display: flex;
+            background-color: turquoise;
+        }
+
+        .box1 P{
+            background-color: aqua;
+        }
+
+/* flex의 자식들은 모두 가로로 배열됨
+    자식들의 크기에 상관없이 무조건 한 줄로 표시됨 */
+        .box2 {
+            display: flex;
+/* flex-wrap : 여러 줄 묶음을 설정함 */
+            flex-wrap: wrap;
+            width: 300px;
+            background-color: green;
+        }
+        .box2 p{
+            width: 90px;
+            background-color: lightgreen;
+        }
+
+        .box3{
+            display: flex;
+            width: 500px;
+/* justify-content : 정렬방법을 설정함 */
+            justify-content: space-around;
+            background-color: pink;
+        }
+        .box3 p{
+            width: 90px;
+            background-color: plum;
+        }
+
+        .box4{
+            width: 800px;
+            display: flex;
+            justify-content: center;
+            background-color: purple;
+        }
+        .box4 p{
+            margin-left: 10px;
+            margin-right: 10px;
+            width: 90px;
+            background-color: rebeccapurple;
+        }
+    </style>
+<body>
+    <div class="box1">
+        <p>가1</p>
+        <p>가2</p>
+        <p>가3</p>
+        <p>가4</p>
+        <p>가5</p>
+    </div>
+    <hr>
+        <div class="box2">
+            <p>가1</p>
+            <p>가2</p>
+            <p>가3</p>
+            <p>가4</p>
+            <p>가5</p>
+        </div>
+    <hr>
+    <div class="box3">
+        <p>가1</p>
+        <p>가2</p>
+        <p>가3</p>
+        <p>가4</p>
+        <p>가5</p>
+    </div>
+    <hr>
+    <div class="box4">
+        <p>가1</p>
+        <p>가2</p>
+        <p>가3</p>
+        <p>가4</p>
+        <p>가5</p>
+    </div>
+
+</body>
+</html>
